@@ -20,15 +20,41 @@
     <![endif]-->
   </head>
   <body>
-
-    <div class="circle"></div> 
-    <h1> Bouncing Ball </h1>
-    <!--<p>Click anywhere on the screen to get a ball bouncing!</p>-->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="experiment4-bouncing-ball.js"></script>
+    <div class="container">
+      <div class="jumbotron">
+        <h1> Bouncing Balls </h1>
+      </div>
+    </div>
+    <!-- <div class="circle"></div> -->
     
+    
+    
+    <div class="container">
+      <label for="color">Color (Hexadecimal) </label> 
+      <input type="text" id="color" name="color" value="#148F6C">
+
+      <label for="diam">Diameter(em)</label> 
+      <input type="text" id="diam" name="diam" value="5em">
+
+      <br>
+
+      <label for="bounce">Bounce (number of times)</label> 
+      <input type="text" id="bounce" name="bounce" value="10">
+      <label for="bounceH">Bounce Height(px)</label> 
+      <input type="text" id="bounceH" name="bounceH" value="50px">
+      <label for="bounceS">Bounce Speed</label> 
+      <input type="text" id="bounceS" name="bounceS" value="500">
+
+      <br>
+      <p>Click this button to make a ball!</p>
+      <button type="button" id="button3">Make Ball</button>
+      //<button type"button" id ="randomize">Random</button>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="experiment4-bouncing-ball.js"></script>
+    </div>  
   </body>
 </html>
