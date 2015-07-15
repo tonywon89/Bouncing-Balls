@@ -54,8 +54,17 @@ function changeValue(name, property) {
     $('<div class="circle"></div>').css("background-color", color).css("width", diam).css("height", diam).insertAfter("body");
     
   });
-    
   
+  $("#randomize").click(function(){
+    color = '#' + Math.random().toString(16).slice(2, 8);
+    $('#color').val(color);
+    diam = Math.floor((Math.random() * 40) + 1).toString() + "em";
+    $('#diam').val(diam);
+  });
+  
+  $("#delete").click(function(){
+    $(".circle").remove();
+  })
 
   $(document).on("mouseover", ".circle", function(event){
     event.stopPropagation();
@@ -68,6 +77,7 @@ function changeValue(name, property) {
     event.stopPropagation();
     $(this).remove();
   } );
+
     
     
     
